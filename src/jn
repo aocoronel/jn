@@ -170,6 +170,7 @@ function _add_note() {
     jn_workspace="$JN_PATH/$jn_workspace"
   fi
 
+  _get_dates
   _apply_template "$jn_workspace/$file.md"
   val=$?
   _template_variable_parser "$jn_workspace/$file.md"
