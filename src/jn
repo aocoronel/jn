@@ -232,7 +232,7 @@ function _get_dates() {
   day=$(date +%F)
   month="$(date +%Y-%m)"
   time=$(date +%H:%M)
-  week="$(date +%Y)-W$(echo "$(date +%V) + 1" | bc)"
+  week="$(date +%Y)-W$(date +%V)"
   year=$(date +%Y)
 }
 
