@@ -52,8 +52,8 @@ function _error() {
 }
 
 function _display_all_files() {
-  if [ -n "$workspace" ]; then
-    find -L "$JN_PATH/$workspace" -type f | sed -E "s|$JN_PATH\/||"
+  if command -v fd &>/dev/null; then
+    fd -L . "$JN_PATH" | sed "s|$JN_PATH\/||"
   else
     find -L "$JN_PATH" -type f | sed -E "s|$JN_PATH\/||"
   fi
