@@ -23,7 +23,7 @@
 To install `jn`, follow these steps:
 
 ```bash
-git clone https://github.com/janpstrunn/jn
+git clone https://github.com/anstrinn/jn
 cd jn && mv src/jn \$HOME/.local/bin
 chmod +x \$HOME/.local/bin/jn
 ```
